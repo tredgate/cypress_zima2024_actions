@@ -4,3 +4,4 @@ describe("PMTool Login Page Tests", () => {
     cy.get(".form-title").should("be.visible");
   });
 });
+// strašně hodnotej komentář

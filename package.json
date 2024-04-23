@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/tredgate/cypress_zima2024_actions#readme",
   "dependencies": {
+    "@cypress/grep": "^4.0.1",
     "cypress": "^13.8.0"
   }
 }

@@ -1,9 +1,15 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
+  env: {
+    grepFilterSpecs: true,
+    grepOmitFiltered: true,
+  },
   e2e: {
     setupNodeEvents(on, config) {
-      // implement node event listeners here
+      require("@cypress/grep/src/plugin")(config);
+      return config;
     },
+    watchForFileChanges: false,
   },
 });
